@@ -11,8 +11,14 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'app/bower_components/underscore/underscore.js',
+      'app/bower_components/chance/chance.js',
+      'app/bower_components/rm-jstat/jstat.js',
       'app/bower_components/angular/angular.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
+      'app/bower_components/d3/d3.js',
+      'app/bower_components/nvd3/nv.d3.js',
+      'app/bower_components/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js',
       'app/scripts/*.coffee',
       'app/scripts/**/*.coffee',
       'test/mock/**/*.coffee',
