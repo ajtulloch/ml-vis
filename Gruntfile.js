@@ -16,7 +16,7 @@ module.exports = function (grunt) {
   require('time-grunt')(grunt);
 
   grunt.loadNpmTasks('grunt-coffeelint');
-
+  grunt.loadNpmTasks('grunt-gh-pages');
   
   // Define the configuration for all the tasks
   grunt.initConfig({
@@ -28,6 +28,13 @@ module.exports = function (grunt) {
       dist: 'dist'
     },
 
+    'gh-pages': {
+      options:{
+        base: 'dist'
+      },
+      src: ['**']
+    },
+    
     coffeelint:{
       app: ['app/**/*.coffee']
     },
