@@ -38,7 +38,7 @@ function normInv(p) {
 
   return retVal;
 }
-`                                                                                                                                                                    
+`
 
 angular.module('decisionTreeVisualizationApp')
   .factory 'AdPredictor', ($log) ->
